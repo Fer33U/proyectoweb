@@ -1,9 +1,12 @@
 //*Importar modulo de express, declaracion de app */
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
 require('./database')
 
+
+app.use(cors());
 app.use(express.json());
 
 //** Importar rutas, uso de rutas */
