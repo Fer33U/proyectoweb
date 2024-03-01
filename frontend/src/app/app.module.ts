@@ -11,6 +11,7 @@ import { routes } from './app.routes';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Token } from '@angular/compiler';
 
 
@@ -24,6 +25,7 @@ import { Token } from '@angular/compiler';
     FormsModule, // Agrega FormsModule aquí
     HttpClientModule,
     RouterModule.forRoot(routes),
+    CarouselModule.forRoot(),
     CommonModule,
   ],
   providers: [

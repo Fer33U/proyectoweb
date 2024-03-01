@@ -1,12 +1,12 @@
 /* CSS para ajustar el tamaño de la imagen en el carrusel */
 .carousel-item img {
-  /* Ajusta el ancho máximo de la imagen al 100% del contenedor */  /* Ajusta la altura automática para mantener la proporción de aspecto */
+  /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+  /* Ajusta la altura automática para mantener la proporción de aspecto */
   height: 620px;
   margin-bottom: 75px;
 }
 
-
-
+/* Estilos generales */
 .componentesCentrado {
   display: flex;
   justify-content: center;
@@ -31,15 +31,3 @@
 h1 {
   text-align: center;
 }
-
-.componentesCentrado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.componentesCentrado h1 {
-  text-align: center;
-}
-
-

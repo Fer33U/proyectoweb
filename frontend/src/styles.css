@@ -80,3 +80,7 @@ body {
 }
 
 
+.footer-custom .tw img {
+  width: 45px; /* ajusta el ancho según tus necesidades */
+  height: 45px; /* ajusta el alto según tus necesidades */
+}
