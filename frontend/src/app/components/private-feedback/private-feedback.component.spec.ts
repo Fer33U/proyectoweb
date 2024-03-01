@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PrivateFeedbackComponent } from './private-feedback.component';
+
 
 describe('PrivateFeedbackComponent', () => {
   let component: PrivateFeedbackComponent;
@@ -8,10 +8,10 @@ describe('PrivateFeedbackComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrivateFeedbackComponent]
+      declarations: [PrivateFeedbackComponent] // Aquí importa el componente, no el módulo
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(PrivateFeedbackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

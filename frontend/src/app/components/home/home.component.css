@@ -1,0 +1,12 @@
+.container {
+  margin-left: 250px; /* Esto centrará horizontalmente el contenedor */
+}
+
+
+.cards {
+  width: 14rem;
+  margin-top: 150px; /* Ajusta el margen inferior para mover los elementos hacia abajo */
+  padding-bottom: 15px;
+}
+
+

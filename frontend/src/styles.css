@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100vh; /* Usamos vh para altura relativa al viewport */
+  overflow-x: hidden;
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+ position: relative;
+}
+
+.footer-custom {
+  padding-top: 25px;
+  background-color: #5b7c8d !important;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+}
+
+/* Nuevo estilo para los iconos SVG dentro de .effect a */
+.effect.thurio a img {
+  transform: rotate(315deg); /* Elimina cualquier transformación de rotación */
+}
+
+.effect.thurio a {
+  margin-left: 20px; /* Agrega un margen izquierdo de 50px */
+}
+
+
+.effect.thurio {
+  .buttons {
+    display: flex; /* Utiliza flexbox para alinear los iconos horizontalmente */
+    align-items: center; /* Centra verticalmente los iconos */
+  }
+
+  a {
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+
+    i {
+      transition: transform 0.01s linear 0s;
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      border-radius: 0px;
+    }
+  }
+}
+
+.effect a {
+  text-decoration: none !important;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Usando el valor fijo */
+  font-size: 25px; /* Usando el valor fijo */
+  overflow: hidden;
+  position: relative;
+  color: #ffffff; /* Cambia al color blanco */
+  border: 2px solid #ffffff; /* Cambia al color blanco */
+}
+
+.effect a:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.effect a img {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+

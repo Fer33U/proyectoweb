@@ -5,6 +5,7 @@ import { PrivateFeedbackComponent } from './components/private-feedback/private-
 import { HomeComponent } from './components/home/home.component';
 import { AuthGuard } from './auth.guard';
 import { Error1Component } from './components/error1/error1.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 export const routes: Routes = [
   {
@@ -24,6 +25,10 @@ export const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent
+  },
+  {
+    path: 'nosotros',
+    component: NosotrosComponent
   },
   {
     path: 'signin',
