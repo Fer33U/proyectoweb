@@ -16,34 +16,35 @@ import { Router } from '@angular/router';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent implements OnInit{
+export class SignupComponent implements OnInit {
 
-  user= {
+  user = {
     email: '',
-    password: ''
-  }
+    password: '',
+    nombre: '',
+    apellidoPaterno: '',
+    apellidoMaterno: '',
+    fechaNacimiento: '',
+    institucion: ''
+  };
 
   constructor(
-    private AuthService: AuthService,
+    private authService: AuthService,
     private router: Router
-    ){}
+  ) {}
 
-  ngOnInit(){
+  ngOnInit() {}
 
+  signUp() {
+    this.authService.signup(this.user)
+      .subscribe(
+        res => {
+          console.log(res);
+          localStorage.setItem('token', res.token);
+          this.router.navigate(['/private']);
+        },
+        err => console.log(err)
+      );
   }
-
-  signUp(){
-    this.AuthService.signup(this.user)
-    .subscribe(
-      res => {
-        console.log(res)
-        localStorage.setItem('token' , res.token);
-        this.router.navigate(['/private']);
-      },
-      err => console.log(err)
-
-    )
-  }
-
 }
 

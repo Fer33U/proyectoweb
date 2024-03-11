@@ -1,13 +1,12 @@
 <div class="row">
-  <div class="col-md-4" *ngFor="let datos of datos">
+  <div class="col-md-4" *ngFor="let dato of datos">
     <div class="card">
       <div class="card-body">
-        <h3>{{datos?.name}}</h3>
-        <p>{{datos?.description}}</p>
+        <h3>{{dato.name}}</h3>
+        <p>{{dato.description}}</p>
       </div>
       <div class="card-footer">
-        {{datos?.date | date: 'shortDate'}}
-
+        {{dato.date | date: 'shortDate'}}
       </div>
     </div>
   </div>
